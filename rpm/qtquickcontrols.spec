@@ -35,7 +35,7 @@ make %{?_smp_flags}
 %install
 rm -rf %{buildroot}
 %qmake5_install
-
+rm -rf /usr/lib/debug
 #### Pre/Post section
 
 %post
@@ -48,6 +48,8 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %{_libdir}/qt5/qml/QtQuick/Controls/
+%{_libdir}/qt5/qml/QtQuick/Dialogs/
+%{_libdir}/qt5/qml/QtQuick/Extras/
 %{_libdir}/qt5/qml/QtQuick/Layouts/libqquicklayoutsplugin.so
 %{_libdir}/qt5/qml/QtQuick/Layouts/plugins.qmltypes
 %{_libdir}/qt5/qml/QtQuick/Layouts/qmldir
