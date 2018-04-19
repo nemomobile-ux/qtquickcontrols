@@ -6,6 +6,9 @@ Group:      Qt/Qt
 License:    LGPLv2.1 with exception or GPLv3
 URL:        http://qt.nokia.com
 Source0:    %{name}-%{version}.tar.xz
+Requires:   qt5-qtdeclarative-import-qtquick2plugin
+Requires:   qt5-qtdeclarative-import-window2
+
 BuildRequires:  qt5-qtcore-devel
 BuildRequires:  qt5-qtgui-devel
 BuildRequires:  qt5-qtdeclarative-devel
